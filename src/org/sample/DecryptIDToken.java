@@ -1,4 +1,4 @@
-package org.wso2.sample;
+package org.sample;
 
 import com.nimbusds.jose.crypto.RSADecrypter;
 import com.nimbusds.jwt.EncryptedJWT;
