@@ -8,15 +8,12 @@ import java.security.*;
 import java.security.cert.Certificate;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.util.Base64;
 
 public class DecryptIDToken {
     public static void main(String[] args) throws Exception {
 
         KeyStore keyStore = KeyStore.getInstance("JKS");
-        FileInputStream fileInputStream = new FileInputStream("/Users/krishanc/Documents/GitHub/Decryptor/src/org/wso2/sample/wso2carbon.jks");
+        FileInputStream fileInputStream = new FileInputStream("/Users/krishanc/Documents/GitHub/Decryptor/src/org/sample/wso2carbon.jks");
         char[] password = "wso2carbon".toCharArray();
         keyStore.load(fileInputStream, password);
         fileInputStream.close();
